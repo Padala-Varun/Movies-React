@@ -1,62 +1,54 @@
-.home {
-  padding: 2rem 0;
-  width: 100%;
-  box-sizing: border-box;
+/* Home.css */
+body {
+  background-color: #1e1e2e;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .search-form {
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  display: flex;
-  gap: 1rem;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .search-input {
-  flex: 1;
-  padding: 0.75rem 1rem;
+  padding: 10px;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: white;
-  font-size: 1rem;
-}
-
-.search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #666;
+  background: #333;
+  color: white;
 }
 
 .search-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #e50914;
-  color: white;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.2s;
-  white-space: nowrap;
+  background-color: #ff7eb3;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .search-button:hover {
-  background-color: #f40612;
-}
-
-@media (max-width: 639px) {
-  .home {
-    padding: 1rem 0;
-  }
-
-  .search-form {
-    margin-bottom: 1rem;
-  }
+  background-color: #ff3b6f;
 }
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
 }
