@@ -28,6 +28,35 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.user-name {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.logout-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #b2070f;
+}
+
+.login-link {
+  background-color: #e50914;
+}
+
+.login-link:hover {
+  background-color: #b2070f;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
