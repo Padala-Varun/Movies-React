@@ -1,0 +1,124 @@
+/* Styles for the overall login page container */
+.login-page {
+  display: flex;
+  justify-content: center; /* Center the login form horizontally */
+  align-items: center; /* Center the login form vertically */
+  min-height: calc(100vh - 60px); /* Adjust height, assuming a Navbar of ~60px */
+  padding: 2rem;
+  background-color: #1a1a1a; /* Dark background, consistent with site theme */
+  color: #ffffff; /* White text for readability */
+}
+
+/* Styles for the main login form container */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.08); /* Semi-transparent white background */
+  padding: 3rem;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 450px; /* Max width to keep the form from being too wide */
+  text-align: center; /* Center text within the container */
+}
+
+/* Heading style for the login form */
+.login-container h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #e50914; /* Netflix red, used for important headings */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for emphasis */
+}
+
+/* Styling for individual form groups (label + input) */
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+/* Styling for form labels */
+.login-form label {
+  display: block; /* Make label take full width */
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #ccc; /* Lighter grey for labels */
+}
+
+/* Styling for text and password input fields */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%; /* Full width within its container */
+  padding: 0.8rem 1rem;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text input */
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Focus state for input fields */
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none; /* Remove default outline */
+  border-color: #e50914; /* Highlight border with Netflix red on focus */
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3); /* Glow effect on focus */
+}
+
+/* Styling for the login button */
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #e50914; /* Netflix red background */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  margin-top: 1rem;
+}
+
+/* Hover state for the login button */
+.login-button:hover {
+  background-color: #f40612; /* Slightly brighter red on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state for the login button */
+.login-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+/* Styling for the "Register here" link */
+.register-link {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.register-link a {
+  color: #646cff; /* Consistent link color from index.css */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  color: #535bf2; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 2rem;
+    margin: 0 1rem; /* Add horizontal margin on small screens */
+  }
+  .login-container h2 {
+    font-size: 2rem;
+  }
+  .login-form label,
+  .login-form input,
+  .login-button {
+    font-size: 0.9rem; /* Slightly smaller font for better fit */
+  }
+}
