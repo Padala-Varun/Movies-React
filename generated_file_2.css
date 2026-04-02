@@ -1,0 +1,122 @@
+/* frontend-Movie-React/src/css/Login.css */
+
+.login-container {
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 450px; /* Constrain width for a focused form */
+  margin: 4rem auto; /* Center the container with some top margin */
+  background-color: rgba(255, 255, 255, 0.08); /* Slightly lighter background than body */
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Glassmorphism effect */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between form groups */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #e0e0e0; /* Lighter color for labels */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4); /* Darker input background */
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus {
+  border-color: #e50914; /* Netflix red on focus */
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3); /* Soft glow on focus */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: none; /* Remove default button border */
+  background-color: #e50914; /* Netflix red */
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4); /* Red shadow for button */
+}
+
+.login-form button:hover {
+  background-color: #ff0a16; /* Slightly brighter red on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.login-form button:active {
+  transform: translateY(0);
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.register-link a {
+  color: #e50914; /* Netflix red for the link */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.register-link a:hover {
+  color: #ff0a16; /* Brighter red on hover */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .login-container {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+    max-width: 95%;
+  }
+
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .login-form button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+}
