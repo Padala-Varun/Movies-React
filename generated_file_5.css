@@ -1,0 +1,132 @@
+/* frontend-Movie-React/src/css/Auth.css */
+
+/* Container for login/auth forms */
+.auth-container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 4rem auto; /* Center the container with vertical spacing */
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.08); /* Semi-transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(5px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border */
+}
+
+/* Title for auth pages (e.g., Login, Register) */
+.auth-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+/* Form group for labels and inputs */
+.auth-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Labels for form inputs */
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc; /* Lighter text color */
+  font-size: 1.1rem;
+}
+
+/* Styling for input fields */
+.auth-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+  color: #fff; /* White text */
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus state for input fields */
+.auth-input:focus {
+  outline: none;
+  border-color: #e50914; /* Netflix red accent */
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3); /* Glow effect */
+}
+
+/* Styling for primary action buttons (e.g., Login) */
+.auth-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover/active effects */
+}
+
+/* Hover state for primary buttons */
+.auth-button:hover {
+  background-color: #f40612; /* Slightly brighter red */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active state for primary buttons */
+.auth-button:active {
+  transform: translateY(0); /* Reset lift effect */
+}
+
+/* Styling for error messages */
+.auth-error {
+  color: #ff4d4f; /* Error red */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  background-color: rgba(255, 77, 79, 0.1); /* Light red background */
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ff4d4f; /* Red border */
+}
+
+/* Styling for the logout button */
+.logout-button {
+  padding: 0.7rem 1.2rem;
+  background-color: #333; /* Darker background */
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-left: 1rem; /* Example: if placed next to other header elements */
+}
+
+/* Hover state for logout button */
+.logout-button:hover {
+  background-color: #555;
+  border-color: #777;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .auth-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .auth-button, .logout-button {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+}
